@@ -11,10 +11,16 @@ public class Prob04 {
 	}
 	
 	public static char[] reverse(String str) {
-		/* 코드를 완성합니다 */
+		String reversStr=(new StringBuffer(str).reverse().toString()); //문자거꾸로함
+		char[] c=new char[reversStr.length()]; //char형 선언해준다 ->거꾸로 바꾼 문자수의 길이만큼
+		for(int i=0;i<str.length();i++)
+		{
+			c[i]=reversStr.charAt(i); //char형식에 글자하나씩 넣어준다
+		}
+		return c; //c 전체를 반환
 	}
 
 	public static void printCharArray(char[] array){
-		/* 코드를 완성합니다 */
+		System.out.println(array);
 	}
 }
